@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<script>
+    function stickyMenu () {      
+        var sticky=document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else 
+        {
+            sticky.classList.remove('sticky');
+        }
+    }
+    window.onscroll=function(){
+        stickyMenu();
+    }
+</script>
+<style>
+    @media  screen and (max-width: 765px) {
+        .navbar .menu  li a{
+            font-size: 15px;
+        }
+        i{
+            width: 20px; 
+            height: 10px;
+        }
+        .navbar{
+            width: 800px;
+        }
+        .logo h1{
+            font-size: 15px;
+        }
+        .card{
+            width: 400px;
+            height: 400px;
+        }
+    }
+</style>
+<body>
+    <div class="parallel">
+    <nav class="navbar">
+        <img src="./images/LOGO_COZA.png" alt="coza">
+        <div class="logo"><h1>COZA STORE</h1></div>
+        <ul id="sticky" class="menu">
+            <li><a href="http://127.0.0.1:5501/homepage.html" class="active">Home</a> </li>
+            <li><a href="http://127.0.0.1:5501/shop.html" class="active1">Shop</a></li>
+            <li><a href="http://127.0.0.1:5501/features.html">Features</a></li>
+            <li><a href="http://127.0.0.1:5501/blog.html">Blog</a></li>
+            <li><a href="http://127.0.0.1:5501/about.html">About</a></li>
+            <li><a href="http://127.0.0.1:5501/contact.html">Contact </a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+<div class="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+</nav>
+<h1 class="pheading">Shop for Men & Women</h1>
+  <div class="products">
+    <div class="fashion">
+        <a href="#men's apparel">
+            <div class="categories">
+                <img src="./images/wp3075880.webp" alt="mens"
+                class="item-image">
+                <div class="image-title">Men's Fashion</div>
+            </div>
+        </a>
+        <a href="#women's apparel">
+                <div class="categories">
+                    <img src="./images/5.jpg" alt="womens"
+                    class="item-image">
+                    <div class="image-title">Women's Fashion</div>
+                </div>
+        </a>
+    </div>
+        <div class="parallel">
+        <h1 class="pheading">Men's Fashion</h1>
+     <div class="fashion2">
+        <div class="card">
+            <div class="img"><img src="./images/Blazer-men-Casual-Suit-Cotton-Denim-Parka-Men-s-slim-fit-Jackets-Army-Green-Khaki-Large__37426.jpg" alt=""></div>
+            <div class="desc">Men</div>
+            <div class="title">Men's jacket</div>
+            <div class="box">
+                <i class="fa-regular fa-heart"></i>
+                <div class="price">₹1800</div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img"><img src="./images/OIP (2).jpg" alt="blazer"></div>
+            <div class="desc">Men</div>
+            <div class="title">Men's Blazer</div>
+            <div class="box">
+                <i class="fa-regular fa-heart"></i>
+                <div class="price">₹2000</div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="./images/hm-blue-denim-shirt-product-1-17490783-0-620972175-normal.webp" alt="shirt"></div>
+            <div class="desc">Men</div>
+            <div class="title">Men's shirt</div>
+            <div class="box">
+                <i class="fa-regular fa-heart"></i>
+                <div class="price">₹1500</div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img"><img src="./images/fb685467-590e-4a81-be17-ca62af0298b5_1.7fbc5615c33c9b68e0cee8112cfbc3d0.webp" alt="pant"></div>
+            <div class="desc">Men</div>
+            <div class="title">Men's Pant</div>
+            <div class="box">
+                <i class="fa-regular fa-heart"></i>
+                <div class="price">₹1400</div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+        <h1 class="pheading">Women's Fashion</h1>
+        <div class="fashion3">
+           <div class="card">
+               <div class="img"><img src="./images/OIP (3).jpg" alt=""></div>
+               <div class="desc">Women</div>
+               <div class="title">Women's jacket</div>
+               <div class="box">
+                   <i class="fa-regular fa-heart"></i>
+                   <div class="price">₹1800</div>
+                   <button class="btn">Buy Now</button>
+               </div>
+           </div>
+   
+   
+           <div class="card">
+               <div class="img"><img src="./images/OIP (4).jpg" alt="blazer"></div>
+               <div class="desc">Women</div>
+               <div class="title">Women's Blazer</div>
+               <div class="box">
+                   <i class="fa-regular fa-heart"></i>
+                   <div class="price">₹2000</div>
+                   <button class="btn">Buy Now</button>
+               </div>
+           </div>
+   
+           <div class="card">
+               <div class="img"><img src="./images/45953_w130l_lightgreen_w_2.webp" alt="shirt"></div>
+               <div class="desc">Women</div>
+               <div class="title">Women's shirt</div>
+               <div class="box">
+                   <i class="fa-regular fa-heart"></i>
+                   <div class="price">₹1600</div>
+                   <button class="btn">Buy Now</button>
+               </div>
+           </div>
+           <div class="card">
+               <div class="img"><img src="./images/R (1).jpg" alt="pant"></div>
+               <div class="desc">Women</div>
+               <div class="title">Women's Pant</div>
+               <div class="box">
+                   <i class="fa-regular fa-heart"></i>
+                   <div class="price">₹1400</div>
+                   <button class="btn">Buy Now</button>
+               </div>
+           </div>
+     </div>
+    </div>
+  </div>
+</body>
+</html>
